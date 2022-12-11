@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="./style/signup.css">
+    <link rel="stylesheet" href="./style/auth.css">
     
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -22,130 +22,31 @@
     <div class="container">
         <header>
             <h5>Sign up<span>.</span></h5>
-            <p id="up">Hi, Welcome to our  team !</p>
+            <p id="up">Hi, One step left!</p>
         </header>
 
-        <form action="#">
-            <div class="form first">
-                <div>
-                    <span class="reg-sp1 r1"></span>
-                    <span class="reg-sp2"></span>
-                    <span class="reg-sp3"></span>
-                    <h6 class="reg-t1 t1">Registration</h6>
-                    <h6 class="reg-t2">Authentification</h6>
-                    <h6 class="reg-t3">Confirmation</h6>
-                </div>
-                
-                <div class="details personal">
-                    <span class="title">Personal Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label for="firstName">First Name:</label>
-                            <input type="text" id="firstName" pattern="[a-zA-Z]+" placeholder="Enter first name" required>
-                            
-                        </div>
-
-                        <div class="input-field">
-                            <label for="lastName">Last Name:</label>
-                            <input type="text" id="lastName" pattern="[a-zA-Z]+" placeholder="Enter last name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Email</label>
-                            <input type="email" placeholder="Enter your email" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label for="phone-number">Phone Number</label>
-                            <input type="number" id="phone-number" pattern="[0-9]{10}" placeholder="Enter your phone number" required />
-                        </div>
-
-                        <div class="input-field">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" placeholder="Enter password" minlength="8" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label for="confirmPassword">Confirm Password:</label>
-                            <input type="password" id="confirmPassword" placeholder="Confirm password" minlength="8" required>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="details ID">
-                    <button class="nextBtn">
-                        <span class="btnText">Next</span>
-                        <i class="uil uil-navigator"></i>
-                    </button>
-                </div> 
-                <p id="down">You already have an account?<a id="sign-a" href="./login.html">Login</a></p>
-                
-            </div>
+        <form action="#">       
             <div class="form second">
-                <div>
-                    <span class="reg-sp1"></span>
-                    <span class="reg-sp2 r2"></span>
-                    <span class="reg-sp3"></span>
-                    <h6 class="reg-t1">Registration</h6>
-                    <h6 class="reg-t2 t2">Authentification</h6>
-                    <h6 class="reg-t3">Confirmation</h6>
-                </div>
-                    <div class="details address">
-                        <span class="title">Security questions</span>
-    
-                        <div class="fields">
-                            <div class="input-field">
-                                <label for="firstans">Choose the first question</label>
-                                <select name="questions" id="questions1">
-                                    <option value="">--Please choose an option--</option>
-                                    <option value="pet">name of your first pet</option>
-                                    <option value="school">name of the elementary school</option>
-                                    <option value="nickname">what was your childhood nickname</option>
-                                    <option value="friend">name of your childhood friend</option>
-                                    
-                                </select>
-                                <label for="seconans">Answer:</label>
-                                <input type="text" id="firstans" pattern="[a-zA-Z]+" placeholder="Answer" required>
-                            </div>
-    
-                            <div class="input-field">
-                                <label for="secondans">Choose the first question</label>
-                                <select name="questions" id="questions2">
-                                    <option value="">--Please choose an option--</option>
-                                    <option value="hero">name of your childhood hero</option>
-                                    <option value="gfather">your paternal grandfather's first name</option>
-                                    <option value="teacher">name of your favorite teacher in school</option>
-                                    <option value="home">street name of your first childhood home</option>
-                                </select>
-                                <label for="seconans">Answer:</label>
-                                <input type="text" id="seconans" pattern="[a-zA-Z]+" placeholder="Answer" required>
-                            </div>
-    
-                            <div class="input-field">
-                                <label for="thirdqst">Custom question:</label>
-                                <input type="text" id="secondqst" pattern="[a-zA-Z]+" placeholder="Enter your question" required>
-                            </div>
-    
-                            <div class="input-field">
-                                <label for="thirdans">Answer:</label>
-                                <input type="text" id="thirdans" pattern="[a-zA-Z]+" placeholder="Answer" required>
-                            </div>
-                            
+                <div class="details address">
+                    <span class="title">We’ve sent you a Code to you e-mail</span>
+        
+                    <div class="fields">
+                        
+        
+                        <div class="input-field">
+                            <label for="code">Code</label>
+                            <input type="number" id="code" placeholder="Enter the code" required>
                         </div>
+                                
                     </div>
                     <div class="details family">
                         <div class="buttons">
-                            <div class="backBtn">
-                                <i class="uil uil-navigator"></i>
-                                <span class="btnText">Back</span>
-                            </div>
-                            <button class="submit">
+                            <button >
                                 <span class="btnText">Submit</span>
                                 <i class="uil uil-navigator"></i>
                             </button>
                         </div> 
-                    </div>
+                </div>
             </div>
             
         </form>
@@ -153,4 +54,5 @@
     </div>
     <footer id="footer">    </footer>
 </body>
+
 </html>
