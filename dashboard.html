@@ -37,11 +37,13 @@
                     <img src="./img/user.png" alt="">
                     <p>Profile</p>
                 </div>
-				<div id="logout">
-                    <div class="bloc"></div>
-                    <img src="./img/right.png" alt="">
-                    <p>Logout</p>
-                </div>
+				<a href="./login.html">
+					<div id="logout">
+						<div class="bloc"></div>
+						<img src="./img/right.png" alt="">
+						<p>Logout</p>
+					</div>
+				</a>
 			</div>		
 		  </aside>
 		  <main class="main">
@@ -84,30 +86,6 @@
 		</div>
 		
 		
-		
-		<!--
-		<div style="height: 300px; width: 300px; border:1px solid red; display:inline; float:left">
-			<div style="height: 100%; width: 100%; border:1px solid black">
-				<canvas id="bar-chart" width="300" height="300"></canvas>
-			</div>			
-		</div>
-		<div style="height: 300px; width: 300px; border:1px solid red; display:inline; float:left">
-			<div style="height: 100%; width: 100%; border:1px solid black">
-				<canvas id="line-chart" width="300" height="300"></canvas>
-			</div>			
-		</div>
-		
-		<div style="height: 300px; width: 300px; border:1px solid red; display:inline; float:left">
-			<div style="height: 100%; width: 100%; border:1px solid black">
-				<canvas id="pie-chart" width="300" height="300"></canvas>
-			</div>			
-		</div>
-		
-		<button onclick="loadData()">
-				Load
-		</button>-->
-		<script src="{{url_for('static', filename='script.js')}}"></script>
-	</body>
     <script>
 		
 		new Chart(document.getElementById("line-chart"), {

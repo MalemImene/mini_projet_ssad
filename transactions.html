@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-		<link rel="stylesheet" href="./style/dashboard.css"/>	
+		<link rel="stylesheet" href="./style/transactions.css"/>	
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 	</head>
 	<body>
@@ -34,19 +34,64 @@
                     <img src="./img/user.png" alt="">
                     <p>Profile</p>
                 </div>
-				<div id="logout">
-                    <div class="bloc"></div>
-                    <img src="./img/right.png" alt="">
-                    <p>Logout</p>
-                </div>
+				<a href="./login.html">
+					<div id="logout">
+						<div class="bloc"></div>
+						<img src="./img/right.png" alt="">
+						<p>Logout</p>
+					</div>
+				</a>
 			</div>		
 		  </aside>
 		  <main class="main">
+			<div id="card1">
+				<div class="container">
+					<header>
+						<p id="up">Send money with all security !</p>
+					</header>
+			
+					<form action="#">
+						<div class="form first">
+							
+							<div class="details personal">
+			
+								<div class="fields">
+									<div class="input-field">
+										<label for="firstName">Receiver</label>
+										<input type="text" id="firstName" pattern="[a-zA-Z]+" placeholder="Enter first name" required>
+										
+									</div>
+			
+									<div class="input-field">
+										<label for="amount">Amount</label>
+										<input type="number" id="amount" placeholder="0 DZD" required />
+									</div>
+			
+									<div class="input-field">
+										<label for="code">Bank code</label>
+										<input type="password" id="code" placeholder="Enter your bank code" minlength="8" required>
+									</div>
+			
+								</div>
+							</div>
+			
+							<div class="details ID">
+								<button class="nextBtn">
+									<span class="btnText">Submit</span>
+									<i class="uil uil-navigator"></i>
+								</button>
+							</div> 
+						</div>
+						
+					</form>
+					
+				</div>
+			</div>
 			
 
 		  </main>
 		  <footer class="footer"></footer>
 		</div>
 	</body>
-    
+
 </html>
